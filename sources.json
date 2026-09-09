@@ -1,0 +1,23 @@
+{
+  "domain": "learning-program",
+  "enabled_sources": [
+    "mit-ocw-course-library",
+    "google-developers-certification",
+    "uk-skills-bootcamps-providers",
+    "google-gear-mentorship",
+    "aws-builder-workshops",
+    "uk-apprenticeships-directory"
+  ],
+  "enabled_category_capabilities": [
+    "course",
+    "certification",
+    "bootcamp",
+    "mentorship",
+    "workshop",
+    "apprenticeship-training"
+  ],
+  "network_enabled": true,
+  "permission_status": "reviewed-public-read",
+  "policy_file": "src/book_learning_program_data/source.json",
+  "notes": "Six manually invoked official public pages. Six-hour minimum interval per source. No schedule, account action or remote writes."
+}
