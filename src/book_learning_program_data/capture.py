@@ -48,6 +48,8 @@ def normalize(raw, source, checked_at):
         raise ValueError("unknown learning-program source")
     if source.get("access") == "govuk-api":
         body = json.loads(raw)
+        if not isinstance(body, dict):
+            raise ValueError("GOV.UK source document drift")
         if body.get("base_path") != source["source_url"].removeprefix("https://www.gov.uk"):
             raise ValueError("GOV.UK source path drift")
         if body.get("title") != source["title"] or not isinstance(body.get("details"), dict):
