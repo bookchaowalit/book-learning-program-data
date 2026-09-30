@@ -10,6 +10,7 @@
   "category": "certification",
   "record_kind": "program",
   "title": "Google Developers Certification",
+  "required_markers": ["Google Developers Certification", "certification exam", "training content"],
   "provider": "Google for Developers",
   "learning_format": "online",
   "prerequisites": "Certification-specific preparation and exam requirements apply.",

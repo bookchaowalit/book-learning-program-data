@@ -31,19 +31,19 @@ class Text(HTMLParser):
             self.parts.append(value)
 
 
-REQUIRED_MARKERS = {
-    "mit-ocw-course-library": ("opencourseware", "free online course materials", "courses"),
-    "google-developers-certification": ("google developers certification", "certification exam", "training content"),
-    "google-gear-mentorship": ("technical mentorship", "no-cost program", "certification cohorts"),
-    "aws-builder-workshops": ("workshops now available in aws builder center", "workshops catalog", "filter"),
-    "uk-skills-bootcamps-providers": ("skills bootcamps", "training providers", "government funding"),
-    "uk-apprenticeships-directory": ("become an apprentice", "find an apprenticeship", "apprenticeships"),
-}
+def required_markers(source):
+    """Drift markers reviewed alongside the source config (`required_markers`)."""
+    markers = source.get("required_markers")
+    if not isinstance(markers, list) or not markers:
+        return None
+    if not all(isinstance(marker, str) and marker.strip() for marker in markers):
+        raise ValueError("invalid learning-program drift markers")
+    return tuple(markers)
 
 
 def normalize(raw, source, checked_at):
     """Turn one official page into a conservative learning-program record."""
-    markers = REQUIRED_MARKERS.get(source["id"])
+    markers = required_markers(source)
     if not markers:
         raise ValueError("unknown learning-program source")
     if source.get("access") == "govuk-api":

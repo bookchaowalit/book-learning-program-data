@@ -10,6 +10,7 @@
   "category": "mentorship",
   "record_kind": "program",
   "title": "Google GEAR Get Certified Program",
+  "required_markers": ["technical mentorship", "no-cost program", "certification cohorts"],
   "provider": "Google Developer Program",
   "learning_format": "hybrid",
   "prerequisites": "The page states that an active Google Workspace corporate account and Google Cloud customer employment are required.",
