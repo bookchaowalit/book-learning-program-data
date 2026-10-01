@@ -10,6 +10,7 @@
   "category": "workshop",
   "record_kind": "directory",
   "title": "AWS Builder Center workshops catalog",
+  "required_markers": ["Workshops now available in AWS Builder Center", "workshops catalog", "filter"],
   "provider": "Amazon Web Services",
   "learning_format": "online",
   "prerequisites": "Workshop prerequisites and skill level vary by catalog entry.",

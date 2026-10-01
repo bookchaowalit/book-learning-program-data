@@ -10,6 +10,7 @@
   "category": "apprenticeship-training",
   "record_kind": "directory",
   "title": "Apprenticeships.gov.uk apprenticeship directory",
+  "required_markers": ["Become an apprentice", "Find an apprenticeship", "apprenticeships"],
   "provider": "Department for Education / Apprenticeships.gov.uk",
   "learning_format": "hybrid",
   "prerequisites": "Role, age, residency and provider requirements vary by apprenticeship.",

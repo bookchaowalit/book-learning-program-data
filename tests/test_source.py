@@ -4,7 +4,6 @@ import unittest
 from book_learning_program_data.capture import normalize, source_config
 from book_learning_program_data.cli import validate
 
-
 FIXTURES = {
     "mit-ocw-course-library": (
         "<h1>MIT OpenCourseWare</h1>"

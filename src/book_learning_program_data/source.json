@@ -10,6 +10,7 @@
   "category": "course",
   "record_kind": "directory",
   "title": "MIT OpenCourseWare course library",
+  "required_markers": ["OpenCourseWare", "free online course materials", "courses"],
   "provider": "MIT OpenCourseWare",
   "learning_format": "online",
   "prerequisites": "Varies by course; inspect the individual course page.",

@@ -10,6 +10,7 @@
   "category": "bootcamp",
   "record_kind": "directory",
   "title": "Skills Bootcamps training providers",
+  "required_markers": ["Skills Bootcamps", "training providers", "government funding"],
   "provider": "Department for Education / GOV.UK",
   "learning_format": "hybrid",
   "prerequisites": "Course, area and provider requirements vary by Skills Bootcamp.",
