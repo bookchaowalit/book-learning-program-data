@@ -95,10 +95,10 @@ metadata only; no account, exam, application or employment claim is created.
 Run from this repository with the existing data-lake Python environment:
 
 ```bash
-export SOLO_EMPIRE_ROOT=/home/bookchaowalit/book/solo-empire
-PYTHONPATH=src "$SOLO_EMPIRE_ROOT/infra/.venv-datalake/bin/python" -m book_learning_program_data.capture acquire --lake "$PWD/data/lake" --state-dir "$PWD/data/control"
-PYTHONPATH=src "$SOLO_EMPIRE_ROOT/infra/.venv-datalake/bin/python" -m book_learning_program_data.capture records --lake "$PWD/data/lake" --state-dir "$PWD/data/control"
-PYTHONPATH=src "$SOLO_EMPIRE_ROOT/infra/.venv-datalake/bin/python" -m book_learning_program_data.capture acquire --source-id google-developers-certification --lake "$PWD/data/lake" --state-dir "$PWD/data/control"
+export SOLO_DATA_LAKE_ROOT=/path/to/solo-data-lake
+PYTHONPATH=src "$SOLO_DATA_LAKE_ROOT/.venv/bin/python" -m book_learning_program_data.capture acquire --lake "$PWD/data/lake" --state-dir "$PWD/data/control"
+PYTHONPATH=src "$SOLO_DATA_LAKE_ROOT/.venv/bin/python" -m book_learning_program_data.capture records --lake "$PWD/data/lake" --state-dir "$PWD/data/control"
+PYTHONPATH=src "$SOLO_DATA_LAKE_ROOT/.venv/bin/python" -m book_learning_program_data.capture acquire --source-id google-developers-certification --lake "$PWD/data/lake" --state-dir "$PWD/data/control"
 ```
 
 The adapter requires source-specific visible markers and emits unknown
