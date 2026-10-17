@@ -6,12 +6,10 @@ from book_learning_program_data.cli import validate
 
 FIXTURES = {
     "mit-ocw-course-library": (
-        "<h1>MIT OpenCourseWare</h1>"
-        "<p>Free online course materials from thousands of courses.</p>"
+        "<h1>MIT OpenCourseWare</h1><p>Free online course materials from thousands of courses.</p>"
     ),
     "google-developers-certification": (
-        "<h1>Google Developers Certification</h1>"
-        "<p>Take a certification exam with training content.</p>"
+        "<h1>Google Developers Certification</h1><p>Take a certification exam with training content.</p>"
     ),
     "google-gear-mentorship": (
         "<h1>Register for expert-led certification cohorts</h1>"
@@ -22,16 +20,17 @@ FIXTURES = {
         "<p>Explore the workshops catalog and filter the results.</p>"
     ),
     "uk-skills-bootcamps-providers": (
-        json.dumps({
-            "base_path": "/government/publications/skills-bootcamps-training-providers",
-            "title": "Skills Bootcamps training providers",
-            "description": "The Department for Education publishes local training providers.",
-            "details": {"body": "A list of local areas that received government funding to run Skills Bootcamps."},
-        })
+        json.dumps(
+            {
+                "base_path": "/government/publications/skills-bootcamps-training-providers",
+                "title": "Skills Bootcamps training providers",
+                "description": "The Department for Education publishes local training providers.",
+                "details": {"body": "A list of local areas that received government funding to run Skills Bootcamps."},
+            }
+        )
     ),
     "uk-apprenticeships-directory": (
-        "<h1>Become an apprentice</h1>"
-        "<p>Find an apprenticeship and explore apprenticeships across England.</p>"
+        "<h1>Become an apprentice</h1><p>Find an apprenticeship and explore apprenticeships across England.</p>"
     ),
 }
 
