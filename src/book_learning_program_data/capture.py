@@ -1,4 +1,5 @@
 """Capture reviewed public learning-program pages through the shared lake runtime."""
+
 import argparse
 import json
 import os
@@ -55,10 +56,12 @@ def normalize(raw, source, checked_at):
         if body.get("title") != source["title"] or not isinstance(body.get("details"), dict):
             raise ValueError("GOV.UK source document drift")
         parser = Text()
-        parser.feed(" ".join(
-            str(value)
-            for value in (body.get("title", ""), body.get("description", ""), body["details"].get("body", ""))
-        ))
+        parser.feed(
+            " ".join(
+                str(value)
+                for value in (body.get("title", ""), body.get("description", ""), body["details"].get("body", ""))
+            )
+        )
         text = " ".join(" ".join(parser.parts).split())
     else:
         parser = Text()
